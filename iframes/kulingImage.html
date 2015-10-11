@@ -1,0 +1,89 @@
+<html>
+	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+	<link rel="stylesheet" href="../assets/css/extended.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<body>
+		<!--script src="work.js"></script-->
+		
+		<div class="fancybox">
+			<div class="container" id="infoText"></div>
+		</div>
+		<script>
+
+			var data = ["Kuling is a single page weather application with multiple"," data sources. The app reads in data from SMHI and YR ","and lets the user estimate  the weather by comparing"," the data. It also has four different filters, so that the user", " can choose to see the temperature, rainfall, cloudiness", "or windness. Focus on Agile Development."];
+
+			
+			var tech = ["Tools: Dart, d3.js and Photoshop."]
+
+			var svg = d3.select("#infoText")
+					   .append("svg")
+					   .attr("preserveAspectRatio", "xMidYMid")
+	   					.attr("viewBox", "0 0 700 500");
+
+			var svgText = svg.selectAll("text")
+                  .data(["KULING", "BACHELOR THESIS,  January 2015 - June 2015"])
+                  .enter()
+
+            var svgText1 = svg.selectAll("text")
+                  .data(data)
+                  .enter()
+
+            var svgTextTech = svg.selectAll("text")
+                  .data(tech)
+                  .enter()
+
+            var imgs = svg.selectAll("image")
+            			.data([0])
+			            .enter()
+			            
+					
+			 imgs.append("image")
+				  .attr("xlink:href", "../images/info_images/kuling_small.png")
+				  .attr("width", 350)
+				  .attr("height", 350)
+				  .attr("x", 428)
+				  .attr("y", 153)
+			
+
+			svgText.append("text")
+					.attr("font-size", function(d, i){
+						if(i==0) return "35px";
+						else return "20px";
+
+					})
+					.attr("fill", function(d,i){
+						if(i==0) return "#000000";
+						else return "#3a3c3d";
+					})
+					.attr("x", 0)
+					.attr("y", function(d, i){
+						return 230 + (i*25);
+					})
+					.text(function(d){
+						return d;
+					})
+			
+			svgText1.append("text")
+					.attr("font-size", "19px")
+					.attr("fill", "#000000")
+					.attr("x", 0)
+					.attr("y", function(d,i){return 285 +(i*20);})
+					.text(function(d){
+						return d;
+					})
+
+			svgTextTech.append("text")
+					.attr("font-size", "19px")
+					.attr("fill", "#000000")
+					.attr("x", 0)
+					.attr("y", function(d,i){return 420 +(i*20);})
+					.text(function(d){
+						return d;
+					})
+
+					// d06969
+
+		</script>
+
+	</body>
+</html>
