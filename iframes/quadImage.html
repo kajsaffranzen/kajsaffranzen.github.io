@@ -1,6 +1,6 @@
 <html>
 	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-	<link rel="stylesheet" href="../assets/css/extended.css" />
+	<link rel="stylesheet" href="../assets/css/extended2.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 	<body>
 		<!--script src="work.js"></script-->
@@ -8,6 +8,8 @@
 		<div class="fancybox">
 			<div class="container" id="infoText"></div>
 		</div>
+		<a href="https://github.com/danielronnkvist/quadproject" 
+		target="_blank"><img class="imageLink" src="../images/info_images/github.png"></a>
 		<script>
 
 			var smallLetter = "\xF6";
@@ -18,7 +20,7 @@
 			var svg = d3.select("#infoText")
 					   .append("svg")
 					   .attr("preserveAspectRatio", "xMidYMid")
-	   					.attr("viewBox", "0 0 700 500");
+	   					.attr("viewBox", "0 0 700 450");
 
 			var svgText = svg.selectAll("text")
                   .data(["QUADCOPTER", "January 2015 - March 2015"])

@@ -1,9 +1,10 @@
-var dataText = ["JavaScript", "HTML", "CSS", "Java", "C++", 
-				"Objective C", "Wordpress", "Dart","Angular","MATLAB",
-				"Agile Development","Photoshop/Illustrator"];
-var data = [9.5, 9.5, 9.5, 6, 7, 
-			6, 4, 7, 8, 7, 
-			8.7, 8];
+var dataText = ["JavaScript", "HTML", "CSS", "Agile Development", "Angular", 
+				"Photoshop/Illustrator", "Dart", "C++","MATLAB", "Java",
+				"Objective C","Wordpress"];
+var data = [9.5, 9.5, 9.5, 8.5, 8, 
+			8, 7, 7, 7, 6, 
+			4, 3];
+
 
 // creating the svg
 var svg = d3.select(".bars")

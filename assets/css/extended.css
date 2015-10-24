@@ -1,6 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 @import url("font-awesome.min.css");
 
+
 .alignImg{
 	display:inline-block;
   	vertical-align:middle;
@@ -25,8 +26,8 @@
 	position: absolute;
 	left: 0;
 	top: 52.5%;
-	font-size: 1.5em;
-	letter-spacing: -0.015em;
+	font-size: 1.2em;
+	letter-spacing: -0.035em;
 	margin-top: 0;
 	font-weight: bolder;
 	color: #555657;

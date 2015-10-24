@@ -1,24 +1,26 @@
 <html>
 	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-	<link rel="stylesheet" href="../assets/css/extended.css" />
+	<link rel="stylesheet" href="../assets/css/extended2.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 	<body>
-		<!--script src="work.js"></script-->
 		
 		<div class="fancybox">
 			<div class="container" id="infoText"></div>
 		</div>
+		<a href="https://github.com/RiiQQe/WeatherApplication" 
+		target="_blank"><img class="imageLink" src="../images/info_images/github.png"></a>
+
 		<script>
 
 			var data = ["Kuling is a single page weather application with multiple"," data sources. The app reads in data from SMHI and YR ","and lets the user estimate  the weather by comparing"," the data. It also has four different filters, so that the user", " can choose to see the temperature, rainfall, cloudiness", "or windness. Focus on Agile Development."];
 
 			
-			var tech = ["Tools: Dart, d3.js and Photoshop."]
+			var tech = ["Tools: Dart, AngularDart, d3.js, JavaScript and Photoshop."]
 
 			var svg = d3.select("#infoText")
 					   .append("svg")
 					   .attr("preserveAspectRatio", "xMidYMid")
-	   					.attr("viewBox", "0 0 700 500");
+	   					.attr("viewBox", "0 0 700 450");
 
 			var svgText = svg.selectAll("text")
                   .data(["KULING", "BACHELOR THESIS,  January 2015 - June 2015"])
@@ -42,7 +44,7 @@
 				  .attr("width", 350)
 				  .attr("height", 350)
 				  .attr("x", 428)
-				  .attr("y", 153)
+				  .attr("y", 123)
 			
 
 			svgText.append("text")
@@ -57,7 +59,7 @@
 					})
 					.attr("x", 0)
 					.attr("y", function(d, i){
-						return 230 + (i*25);
+						return 200 + (i*25);
 					})
 					.text(function(d){
 						return d;
@@ -67,7 +69,7 @@
 					.attr("font-size", "19px")
 					.attr("fill", "#000000")
 					.attr("x", 0)
-					.attr("y", function(d,i){return 285 +(i*20);})
+					.attr("y", function(d,i){return 255 +(i*20);})
 					.text(function(d){
 						return d;
 					})

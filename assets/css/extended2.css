@@ -1,0 +1,14 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css');
+
+/*icons*/
+.imageLink{
+  	float:left;
+	width:60px;   
+    text-align:center;
+}
+
+.imageLink:hover{
+    cursor: pointer;
+    font-size: 28px;
+}
+
