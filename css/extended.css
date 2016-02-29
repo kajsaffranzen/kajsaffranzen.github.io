@@ -1,0 +1,764 @@
+/*Navbar*/
+#nav-pic{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	margin-left: 2px; 
+
+}
+
+#nav-text{
+	font-size: 1.1em;
+	font-family: Avenir;
+	font-weight: bold;
+	color: #fff;
+}
+#nav-textTva{
+	font-size: 1.1em;
+	font-family: Avenir;
+	font-weight: bold;
+	color: #fff;
+}
+#nav-textTre, #nav-textFyr, #nav-textFem{
+	font-size: 1.1em;
+	font-family: Avenir;
+	font-weight: bold;
+	color: #fff;
+}
+.nav-button{
+	background-color: transparent;
+	border-radius: 50px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #fff;
+	color: #fff;
+	width: 143px;
+	height: 41px;
+	font-family: Avenir;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-style: #000;
+	text-align: center;
+	padding-top: 7px;
+	margin-top: 3px;
+	margin-right: 2px;
+}
+
+.about, .about2, .about3{
+	width: 100%;
+	height: 90%;
+}
+
+.about-info, .about4, .about5{
+	width: 100%;
+	height: 80%;
+}
+
+/*Header*/
+.top-text{
+	font-family: "Arial Rounded MT bold";
+}
+
+h1.top-text{
+	font-size: 7em;
+	color: #FFF;
+	font-weight: lighter;
+	margin-left: 22vw;
+	font-family: "Arial Rounded MT bold";
+
+}
+
+h3.top-text{
+	font-size: 2.7em;
+	font-weight: lighter;
+	color: #ffffff;
+	margin-left: 22vw;
+	margin-top: -1vh;
+	/*font-family: "Arial Rounded MT bold";*/
+	font-family: "SignPainter";
+}
+
+.top-btn{
+	/*background-color: #2ABFD1;*/
+	background-color: #0b9df6;
+	color: #ffffff;
+	border-radius: 50px;
+	font-family: Avenir;
+	font-size: 18pt;
+	font-weight: light;
+	border-style: solid;
+	font-style: #000;
+	border-width: 0px;
+	width: 244px;
+	height: 55px;
+	text-align: center;
+	padding-top: 7px;
+	margin-left: 22vw;
+	font-family: Avenir;
+}
+
+
+
+.section_label, .section_label_color{
+	font-size: 5.3em;
+	font-family: Avenir;
+	font-weight: bold;
+	color: #000000;
+}
+
+h2.section_label{
+	padding-top: 1px;
+}
+
+.section_titel{
+	font-family: Avenir;
+	font-size: 1.5em;
+	font-weight: lighter;
+	color: #000000;
+}
+
+.section_info{
+	font-family: Avenir;
+	font-size: 1.7em;
+	font-weight: lighter;
+	color: #000000;
+	margin-top: 7vh;
+	margin-left: 2vw;
+}
+
+.about-section{
+	margin-top: 13vw;
+}
+
+a, a:hover{
+	text-decoration: none;
+	font-family: Avenir;
+	color: #ffffff;
+}
+.a_ref{
+	font-size: 2.7em;
+	/*color: #2ABFD1;*/
+	color: #0b9df6;
+	margin-left: 2vw;
+}
+
+.button{
+	/*background-color: #2ABFD1;*/
+	background-color: #0b9df6;
+	color: #ffffff;
+	border-radius: 50px;
+	font-family: Avenir;
+	font-size: 15pt;
+	font-weight: light;
+	border-style: solid;
+	font-style: #000;
+	border-width: 0px;
+	width: 203px;
+	height: 55px;
+	text-align: center;
+	padding-top: 7px;
+}
+
+a.button{
+	color: #000;
+}
+
+.img_phone{
+	width: 370px;
+	margin-top: -30vh;
+	margin-bottom: 7vh;
+}
+
+.img_phone2{
+	width: 260px;
+	margin-top: -13vh;
+}
+
+.more{
+	font-size: 4.0em;
+	font-family: Avenir;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 5vh;
+}
+
+#the_table {display: table; width: 100%; }
+#the_table2 {display: table; width: 100%; }
+
+@media (min-width: 1500px) and (max-width: 1600px){
+	@media (min-height: 2500px) and (max-height: 2600px){
+
+		.about-info{
+			height: 60%;
+		}
+
+		.about, .about2, .about3{
+			height: 70%;
+		}
+		.about4, .about5{
+			height: 100%;
+		}
+
+		.about-section{
+			margin: 0px;
+		}
+
+		.a_ref{
+			font-size: 4em;
+		}
+
+		.section_info{
+			font-size: 3.7em;
+		}
+		.section_label, .section_label_color{
+			font-size: 10em;
+		}
+
+		.section_titel{
+			font-size: 3.5em;
+		}
+
+		.button{
+			width: 26vw;
+			height: 4vh;
+			font-size: 3em;
+		}
+
+		.img_phone{
+			width: 650px;
+			margin-top: -7vh;
+		}
+
+	}
+}
+
+@media (min-width: 1080px) and (max-width: 1200px){
+	.about, .about2, .about3{
+		height: 80%;
+	}
+	.about4, .about5{
+		height: 100%;
+	}
+}
+
+
+@media (min-width: 940px) and (max-width: 1080px){
+
+	.about, .about2{
+		height: 80%;
+	}
+	
+	.about4, .about5{
+		height: 90%;
+	}
+
+	.img_phone{
+		width: 320px;
+		margin-top: -28vh;
+	}
+	.img_phone2{
+		width: 295px;
+		margin-top: -20vh;
+	}
+
+	/*iPad 768x1024*/
+	@media (min-height: 1000px) and (max-height: 1030px){
+		.about-info{
+			height: 50%;
+		}
+		.about, .about2, .about3, .about4, .about5{
+			height: 70%;
+		}
+		.about-section{
+			margin-top: 2vh;
+		}
+		.section_titel{
+			margin-top: 3vh;
+			margin: 0;
+		}
+
+		.a_ref{
+			font-size: 2.1em;
+		}
+		
+		.img_phone{
+			width: 300px;
+			margin-top: 0;
+			margin-top: -17vh;
+		}
+		.img_phone2{
+			width: 255px;
+			margin-left: -5vw;
+		}
+		
+	}
+}
+
+@media (min-width: 767px) and (max-width: 940px){
+	.about-section{
+		margin-top: 7vw;
+	}
+
+	.about, .about2, .about3, .about4, .about5{
+		height: 80%;
+	}
+
+	.section_label, .section_label_color{
+		font-size: 4.9em;
+	}
+
+	.img_phone{
+		width: 282px;
+		margin-top: -17vw;
+	}
+
+	@media (min-height: 1000px) and (max-height: 1300px){
+		.about-info{
+			height: 50%;
+		}	
+		.about{
+			height: 60%;
+		}
+		.about2{
+			height: 70%;
+		}
+		.about3, .about4, .about5{
+			height: 75%;
+		}
+
+		.img_phone2{
+			margin-top: -2vh;
+			margin
+		}
+	}
+}
+
+/*767*/
+@media (min-width: 530px) and (max-width: 767px){
+	.about-info{
+		height: 100%;
+	}
+	.about{
+		height: 80%; 
+	}
+
+	.about2{
+		height: 110%;
+	}
+
+	.about3, .about4, .about5{
+		height: 80%;
+	}
+	
+
+	h1.top-text, .top-btn{
+		margin-left: 30vw;
+	}
+
+	h3.top-text{
+		margin-left: 24vw;
+	}
+
+	.section_label{
+		font-size: 4em;
+	}
+
+	.section_label_color{
+		font-size: 4em;
+	}
+
+	.a_ref{
+		font-size: 1.7em;
+	}
+	.section_titel{
+		font-size: 1.4em;
+		margin-top: 3vh;
+		margin-right: 13vw;
+	}
+
+	.section_info{
+		font-size: 1.7em;
+	}
+
+	.button{
+		width: 29vw;
+		height: 6vh;
+		font-size: 1.7em;
+	}
+
+	.about-section{
+		margin-top: 3vh;
+	}
+
+	.img_phone{
+		width: 320px;
+		margin-top: -15vh;
+		margin-left: 14vw;
+	}
+
+
+	#block1 {display: table-footer-group; } 
+	#block2 {display: table-header-group; }
+	#block3 {display: table-footer-group; } 
+	#block4 {display: table-header-group; } 
+}
+
+@media (min-width: 470px) and (max-width: 530px){
+	
+	.about-info{
+		height: 55%;
+	}
+	.about{
+		height: 70%; 
+	}
+
+	.about2{
+		height: 110%;
+	}
+
+	.about3{
+		height: 90%;
+	}
+	.about4, .about5{
+		height: 80%;
+	}
+	
+
+	h1.top-text, .top-btn{
+		margin-left: 30vw;
+	}
+
+	h3.top-text{
+		margin-left: 24vw;
+	}
+
+	.section_label{
+		font-size: 4em;
+	}
+
+	.section_label_color{
+		font-size: 4em;
+	}
+
+	.a_ref{
+		font-size: 1.7em;
+	}
+	.section_titel{
+		font-size: 1.4em;
+		margin-top: 3vh;
+		margin-right: 13vw;
+	}
+
+	.section_info{
+		font-size: 1.7em;
+	}
+
+	.button{
+		width: 29vw;
+		height: 6vh;
+		font-size: 1.7em;
+	}
+
+	.about-section{
+		margin-top: 3vh;
+	}
+
+	.img_phone{
+		width: 260px;
+		margin-top: -15vh;
+	}
+
+
+	#block1 {display: table-footer-group; } 
+	#block2 {display: table-header-group; }
+	#block3 {display: table-footer-group; } 
+	#block4 {display: table-header-group; } 
+
+
+}
+
+@media (min-width: 330px) and (max-width: 470px){
+
+	h1.top-text{
+		font-size: 5em;
+		vertical-align: middle;
+	}
+
+	h3.top-text{
+		font-size: 1.4em;
+		margin-left: 14vw;
+	}
+
+	.top-btn{
+		width: 180px;
+		font-size: 1.5em;
+	}
+
+	.section_info{
+		font-size: 1.5em;
+		margin: -4vh -5vw 0 0;
+		line-height: 1.3;
+		text-align: justify;
+	}
+
+	.section_label{
+		font-size: 2.9em;
+	}
+	
+	.section_label_color{
+		font-size: 2.9em;
+		line-height: 1;
+		margin-top: -2vh;
+
+	}
+
+	.section_titel{
+		font-size: 1.4em;
+
+	}
+
+	.a_ref{
+		font-size: 1.7em;
+		margin-left: 0px;
+		font-weight: bold;
+	}
+
+	.button{
+		width: 152px;
+		height: 45px;
+		font-size: 14pt;
+		/*margin-left: -4vw;*/
+	}
+
+	.img_phone{
+		width: 230px;
+		margin-top: -21vh;
+	}
+
+	.img_phone2{
+		width: 215px;
+	}
+
+	.row{
+		margin-top: 2vh;
+	}
+
+	#block1 {display: table-footer-group; } 
+	#block2 {display: table-header-group; } 
+	#block3 {display: table-footer-group; } 
+	#block4 {display: table-header-group; } 
+
+	@media (min-height: 660px) and (max-height: 750px){
+		#mainNav{
+			visibility: hidden;
+		}
+		.about-info, .about2{
+			height: 80%;
+		}
+		.about{
+			height: 90%;
+		}
+		.about2{
+			height: 105%;
+		}
+
+		.about3{
+			height: 90%;
+		}
+		.about4, .about5{
+			height: 73%;
+		}
+
+
+	}
+
+	@media (min-height: 500px) and (max-height: 660px){
+		#mainNav{
+			visibility: hidden;
+		}
+		.about-info, .about2{
+			height: 100%;
+		}
+		.about{
+			height: 120%;
+		}
+		.about2{
+			height: 150%;
+		}
+
+		.about3{
+			height: 120%;
+		}
+		.about4, .about5{
+			height: 100%;
+		}
+
+		.section_info{
+			font-size: 1.3em;
+		}
+
+
+	}
+	@media (min-height: 300px) and (max-height: 500px){
+		#mainNav{
+			visibility: hidden;
+		}
+		.about-info, .about{
+			height: 100%;
+		}
+		.about2{
+			height: 120%;
+		}
+
+		.about3{
+			height: 110%;
+		}
+		.about4, .about5{
+			height: 90%;
+		}
+		.img_phone2{
+			width: 180px;
+		}
+
+	}
+
+}
+
+@media (min-width: 0px) and (max-width: 330px){
+	#mainNav{
+		visibility: hidden;
+	}
+	.about-info, .about{
+		height: 60%;
+	}
+	.about3{
+		height: 75%;
+	}
+
+	.about4, .about5{
+		height: 65%;
+	}
+
+	h1.top-text{
+		font-size: 5em;
+		vertical-align: middle;
+	}
+
+	h3.top-text{
+		font-size: 1.2em;
+		margin-left: 17vw;
+	}
+
+	.top-btn{
+		width: 180px;
+		font-size: 1.5em;
+	}
+
+	.section_info{
+		font-size: 1.3em;
+		margin: -2vh 0 0 0;
+		line-height: 1.3;
+		text-align: justify;
+	}
+
+	.section_label{
+		font-size: 2.7em;
+		line-height: 1;
+
+	}
+	
+	.section_label_color{
+		font-size: 2.7em;
+		line-height: 0.9;
+		margin-top: -2vh;
+
+	}
+
+	.section_titel{
+		font-size: 1.2em;
+		text-align: justify;
+
+	}
+
+	.a_ref{
+		font-size: 1.5em;
+		margin-left: 0px;
+		font-weight: bold;
+	}
+
+	.button{
+		width: 140px;
+		height: 45px;
+		font-size: 14pt;
+	}
+
+	.img_phone{
+		width: 202px;
+		margin-top: -20vh;
+	}
+
+	.img_phone2{
+		width: 180px;
+		margin-top: 4vh;
+	}
+
+	.row{
+		margin-top: 2vh;
+	}
+
+	@media (min-height: 0px) and (max-height: 500px){
+		.about-info{
+			height: 115%;
+		}
+
+		.about2{
+			height: 165%;
+		}
+
+		.about3{
+			height: 120%;
+		}
+		.about, .about4, .about5{
+			height: 100%;
+		}
+		.about-section{
+			margin: 0px;
+		}
+
+		.img_phone{
+			width: 200px;
+			margin-top: -14vh;
+		}
+	}
+	@media (min-height: 500px) and (max-height: 600px){
+		.about-info, .about4{
+			height: 90%;
+		}
+
+		.about, .about5{
+			height: 85%;
+		}
+		.about2{
+			height: 140%;
+		}
+
+		.about3{
+			height: 100%;
+		}
+	}
+
+	#block2 {display: table-header-group; } 
+	#block1 {display: table-footer-group; } 
+	#block3 {display: table-footer-group; } 
+	
+}
+
+#mainNav {
+	background-color: rgba(255,255,255, 0.0);
+}
+
+
+
+
+
+
