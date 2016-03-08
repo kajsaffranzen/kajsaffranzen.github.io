@@ -258,7 +258,7 @@ footer {
 }
 
 .footer-txt{
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-family: Avenir;
     font-weight: lighter;
     color: #000000;
@@ -268,6 +268,40 @@ footer {
 a.footer-txt{
     color: #000000;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  footer{
+        padding: 0 0 5px 0;
+    }
+
+    .footer-txt{
+        font-size: 1em;
+    }  
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  footer{
+        padding: 0 0 5px 0;
+    }
+
+    .footer-txt{
+        font-size: 1em;
+    } 
+
+}
+
 @media (min-width: 330px) and (max-width: 470px){
     
     footer{

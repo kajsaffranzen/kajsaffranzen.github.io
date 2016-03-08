@@ -1,17 +1,17 @@
 var navbarHeight = document.getElementById('mainNav').offsetHeight;
 
+//  $("nav").find("li").on("click", "a", function () {
+//     console.log("hej")
+//     $('.navbar-collapse.in').collapse('hide');
+// });
+
 var waypoint = new Waypoint({
-  element: document.getElementById('info'),
+  element: document.getElementById('about'),
   handler: function(direction) {
     $(document).ready(function(){
     	var innerWidth = window.innerWidth;
     	var obj = document.getElementById('mainNav');
 		if (direction === 'down'){	
-			// console.log("i if");
-			
-			// if(innerWidth < 770){
-			// 	console.log("innerWidth är liten: " + innerWidth);
-			// }
 			
 			obj.style.visibility = 'visible';
 			$("#mainNav").css("background-color", "rgba(255,255,255, 1.0)");
@@ -27,7 +27,8 @@ var waypoint = new Waypoint({
 		}
 		else {
 			console.log("i else");
-			if(innerWidth < 770){
+			console.log(innerWidth)
+			if(innerWidth < 670){
 				console.log("innerWidth är liten i else: " + innerWidth);
 				obj.style.visibility = 'hidden';
 			}
