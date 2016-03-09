@@ -1,10 +1,5 @@
 var navbarHeight = document.getElementById('mainNav').offsetHeight;
 
-//  $("nav").find("li").on("click", "a", function () {
-//     console.log("hej")
-//     $('.navbar-collapse.in').collapse('hide');
-// });
-
 var waypoint = new Waypoint({
   element: document.getElementById('about'),
   handler: function(direction) {
@@ -42,8 +37,6 @@ var waypoint = new Waypoint({
 				$(".icon-bar").css("background-color", "#fff");
 				$(".navbar-default").css("border-color", "rgba(200,200,200, 0.0)");
 			}
-
-			
 		}
 	});
   },
