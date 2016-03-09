@@ -26,10 +26,7 @@ var waypoint = new Waypoint({
 			$(".navbar-default").css("border-color", "rgba(200,200,200, 0.5)");
 		}
 		else {
-			console.log("i else");
-			console.log(innerWidth)
 			if(innerWidth < 670){
-				console.log("innerWidth är liten i else: " + innerWidth);
 				obj.style.visibility = 'hidden';
 			}
 			else{
