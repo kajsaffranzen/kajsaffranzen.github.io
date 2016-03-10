@@ -159,8 +159,8 @@ h3.top-text{
 }
 
 .top-btn{
-	/*background-color: #2ABFD1;*/
-	background-color: #0b9df6;
+	background-color: #00deff;
+	/*background-color: #0b9df6;*/
 	color: #ffffff;
 	border-radius: 50px;
 	font-family: Avenir;
@@ -230,8 +230,8 @@ a, a:hover{
 }
 
 .button{
-	/*background-color: #2ABFD1;*/
-	background-color: #0b9df6;
+	background-color: #00deff;
+	/*background-color: #0b9df6;*/
 	color: #ffffff;
 	border-radius: 50px;
 	font-family: Avenir;
