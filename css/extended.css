@@ -175,6 +175,7 @@ h3.top-text{
 	padding-top: 7px;
 	margin-left: 22vw;
 	font-family: Avenir;
+	font-weight: bold;
 }
 
 
@@ -229,6 +230,7 @@ a, a:hover{
 	margin-left: 2vw;
 }
 
+
 .button{
 	background-color: #00deff;
 	/*background-color: #0b9df6;*/
@@ -237,6 +239,7 @@ a, a:hover{
 	font-family: Avenir;
 	font-size: 15pt;
 	font-weight: light;
+	font-weight: bold;
 	border-style: solid;
 	font-style: #000;
 	border-width: 0px;
