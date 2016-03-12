@@ -1,0 +1,90 @@
+<html>
+	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+	<link rel="stylesheet" href="../assets/css/extended.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<body>
+		<!--script src="work.js"></script-->
+		
+		<div class="fancybox">
+			<div class="container" id="infoText"></div>
+		</div>
+		<script>
+
+			var smallLetter = "\xF6";
+
+			var data = ["Developed and was responsible for web client for Twiik", " together with a team. It is a single page application and", " it is used by approximately 300 users."];
+
+
+			var tech = ["Tools: HTML, SASS, JavaScript, jQuery, Gulp, Photoshop, AJAX and d3.js."]
+						 
+			var svg = d3.select("#infoText")
+					   .append("svg")
+					   .attr("preserveAspectRatio", "xMidYMid")
+	   					.attr("viewBox", "0 0 700 500");
+
+			var svgText = svg.selectAll("text")
+                  .data(["TWIIK", "WEB DEVELOPER, June 2015 - July 2015"]) 
+                  .enter()
+
+
+            var svgText1 = svg.selectAll("text")
+                  .data(data)
+                  .enter()
+
+             var svgTextTech = svg.selectAll("text")
+                  .data(tech)
+                  .enter()
+
+
+            var imgs = svg.selectAll("image")
+            			.data([0])
+			            .enter()
+			            				
+			 imgs.append("image")
+				  .attr("xlink:href", "../images/info_images/twiik_small.png")
+				  .attr("width", 250)
+				  .attr("height", 250)
+				  .attr("x", 458)
+				  .attr("y", 153)
+				  // .on('click', function(d){ console.log(d)})
+			
+
+			svgText.append("text")
+					.attr("font-size", function(d, i){
+						if(i==0) return "35px";
+						else return "20px";
+
+					})
+					.attr("fill", function(d,i){
+						if(i==0) return "#000000";
+						else return "#3a3c3d";
+					})
+					.attr("x", 0)
+					.attr("y", function(d, i){
+						return 230 + (i*25);
+					})
+					.text(function(d){
+						return d;
+					})
+			
+			svgText1.append("text")
+					.attr("font-size", "19px")
+					.attr("fill", "#000000")
+					.attr("x", 0)
+					.attr("y", function(d,i){return 285 +(i*20);})
+					.text(function(d){
+						return d;
+					})
+
+			svgTextTech.append("text")
+					.attr("font-size", "19px")
+					.attr("fill", "#000000")
+					.attr("x", 0)
+					.attr("y", function(d,i){return 420 +(i*20);})
+					.text(function(d){
+						return d;
+					})
+		</script>
+
+	</body>
+</html>

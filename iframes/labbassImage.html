@@ -1,0 +1,74 @@
+<html>
+	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+	<link rel="stylesheet" href="../assets/css/extended.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<body>
+		<!--script src="work.js"></script-->
+		
+		<div class="fancybox">
+			<div class="container" id="infoText"></div>
+		</div>
+		<script>
+
+			var bigLetter = "\326";
+			var smallLetter = "\xF6";
+
+			var data = ["Supervises and examines students groups in laboratories in ", " the course TNM040, Communication and User Interface, and ", " TNMK30, Web Development at Link"+smallLetter+"pings University. "];
+			
+			
+
+			var svg = d3.select("#infoText")
+					   .append("svg")
+					   .attr("preserveAspectRatio", "xMidYMid")
+	   					.attr("viewBox", "0 0 700 500");
+
+			var svgText = svg.selectAll("text")
+                  .data(["LINK"+bigLetter+"PINGS UNIVERSITY", "LABORATORY ASSISTANT, October 2015 - December 2015"])
+                  .enter()
+
+            var svgText1 = svg.selectAll("text")
+                  .data(data)
+                  .enter()
+
+            var imgs = svg.selectAll("image")
+            			.data([0])
+			            .enter()
+			            				
+			 imgs.append("image")
+				  .attr("xlink:href", "../images/info_images/liu_small.png")
+				  .attr("width", 220)
+				  .attr("height", 220)
+				  .attr("x", 484)
+				  .attr("y", 173)
+				  .on('click', function(d){ console.log(d)})
+			
+
+			svgText.append("text")
+					.attr("font-size", function(d, i){
+						if(i==0) return "32px";
+						else return "18px";
+
+					})
+					.attr("fill", function(d,i){
+						if(i==0) return "#000000";
+						else return "#3a3c3d";
+					})
+					.attr("x", 0)
+					.attr("y", function(d, i){
+						return 230 + (i*25);
+					})
+					.text(function(d){
+						return d;
+					})
+			svgText1.append("text")
+					.attr("font-size", "17px")
+					.attr("fill", "#000000")
+					.attr("x", 0)
+					.attr("y", function(d,i){return 285 +(i*20);})
+					.text(function(d){
+						return d;
+					})
+		</script>
+
+	</body>
+</html>
