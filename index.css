@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:regular,bold");
+/* Fonts */
+html,
+body {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+}
+/* Navbar*/
+.navbar {
+  background: none;
+  height: 56px;
+  border-color: transparent;
+}
+.navbar .container {
+  width: auto;
+  top: 2px;
+}
+.navbar-header {
+  background-color: transparent;
+}
+.navbar-header:hover {
+  background-color: #000;
+  border-color: #000;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  float: left;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+  height: 3px;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav {
+  margin-top: auto;
+}
+.navbar-default .navbar-nav li a {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  border-color: #000;
+}
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+a {
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  top: 56px;
+  width: auto;
+  margin: 0 15px 0 15px;
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  color: #000;
+  margin: 4px 0 4px;
+}
+h3 {
+  font-family: Amatic SC;
+  font-weight: bold;
+  color: #000;
+  font-size: 67px;
+  margin: 15px 0 15px;
+}
+.overlay {
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  height: 100%;
+  min-height: 100%;
+}
+.background-option {
+  background: url("./assets/baking.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.top {
+  min-height: 100%;
+  height: 100%;
+  width: auto;
+}
+.top .container {
+  height: 90%;
+}
+.top h3 {
+  color: #fff;
+  font-size: 100px;
+  font-weight: normal;
+}
+.top img {
+  margin-top: 56px;
+  width: 190px;
+}
+.top button {
+  background-color: #000;
+  color: #fff;
+  font: 16px Raleway;
+  font-weight: bold;
+  height: 55px;
+  width: 324px;
+  border: none;
+  margin-top: 28px;
+}
+#bgvid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: no-repeat;
+  background-size: cover;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+.section-1 {
+  font: 15px Raleway;
+  text-align: center;
+  width: 100%;
+  height: 900px;
+}
+.section-1 h2 {
+  font-weight: normal;
+}
+.section-1 .box {
+  border-style: dotted;
+  border-width: 17px;
+  font: 38px Amatic SC;
+  text-align: center;
+  margin: 0 30px 0 30px;
+  border-image-source: url("assets/dots.png");
+  border-image-slice: 33% 33%;
+  border-image-repeat: round;
+  margin-top: 56px;
+}
+.section-1 .img-txt {
+  font: 30px Raleway;
+  margin-top: 10px;
+}
+.section-1 .img {
+  width: 175px;
+}
+.second {
+  height: 360px;
+}
+.section-3 {
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+  color: #fff;
+  font: 17px Raleway;
+  text-align: center;
+}
+.section-3 h1 {
+  color: #fff;
+}
+.section-3 .info {
+  font-size: 18px;
+  line-height: 26px;
+}
+.section-3 button {
+  background-color: #fff;
+  color: #000;
+  font: 20px Raleway;
+  font-weight: bold;
+  height: 55px;
+  width: 400px;
+  border: 2px #000;
+  margin-top: 28px;
+}
+.reg {
+  width: 100%;
+  height: 100px;
+}
+.reg h2 {
+  text-align: right;
+}
+.reg input [type=text] {
+  color: #f00;
+}
+.reg .container {
+  height: 28px;
+}
+#reg-form {
+  color: #000;
+  font: 20px Raleway;
+  font-weight: bold;
+  text-align: left;
+}
+#reg-form input[type=text] {
+  height: 40px;
+  width: 300px;
+}
+#reg-form input[type=text]::-webkit-input-placeholder {
+  font-family: Raleway;
+  color: #000;
+}
+#reg-form button[type=submit] {
+  height: 40px;
+  width: 80px;
+  font-family: Raleway;
+  position: inherit;
+  bottom: 2px;
+}
+#reg-form h2 {
+  color: #fff;
+  text-align: right;
+  transform: translateY(50%);
+  margin-top: 7px;
+}
+.footer {
+  width: 100%;
+  min-width: 100%;
+  height: 112px;
+  border-top-style: solid;
+  border-top-width: thin;
+  text-align: left;
+}
+.footer .container {
+  top: 28px;
+}
+.footer .img {
+  position: relative;
+  width: 100px;
+  bottom: 22.400000000000002px;
+}
+.reg-feedback {
+  margin: 50px 20px 0 20px;
+  font-family: Amatic SC;
+}
+.reg-feedback button {
+  background-color: #000;
+  color: #fff;
+  font: 20px Raleway;
+  font-weight: bold;
+  height: 55px;
+  width: 400px;
+  border-radius: 10px;
+  border: 2px #000;
+  margin-top: 28px;
+}
+@media screen only and (min-width: 766px) and (max-width: 991px) {
+  .top h3 {
+    font-size: 80px;
+  }
+  .top img {
+    width: 100px;
+  }
+  .section-2 img {
+    width: 140px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar-nav li a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #000;
+    border-color: #fff;
+  }
+  .section-2 .img {
+    width: 175px;
+  }
+}
+@media (min-width: 168px) and (max-width: 575px) {
+  #bgvid {
+    display: none !important;
+  }
+  .top {
+    background: url("./assets/baking.png") no-repeat center;
+/*-webkit-background-size: cover;
+				-moz-background-size: cover;*/
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .top h3 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .top img {
+    width: 135px;
+  }
+  .top button {
+    width: 313px;
+    height: 49px;
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 41px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .section-2 .img {
+    width: 150px;
+  }
+  .footer .img {
+    width: 55px;
+    height: 55px;
+  }
+}
+/** Desctop **/
+/** col-md **/
+/*@media (min-width: 992px) and (max-width: 1200px){
+	.top h3 {
+			font-size: 100px
+	}
+}*/
+/** col-sm **/
+@media screen only and (min-width: 768px) and (max-width: 992px) {
+  .top img {
+    width: 140px;
+  }
+  .top h3 {
+    font-size: 100px;
+  }
+  .section-1 img {
+    width: 150px;
+  }
+}
+/* --------------------------- ipad Pro------------------------------- */
+@media (max-width: 1024px) and (orientation: portrait) {
+  .top img {
+    width: 300px;
+  }
+  .top h3 {
+    font-size: 135px;
+  }
+  .top button {
+    font-size: 45px;
+    height: 80px;
+    width: 865px;
+    margin-top: 120px;
+  }
+  .section-1 {
+    height: 956.1999999999999px;
+  }
+  .section-1 h2 {
+    font-size: 27px;
+  }
+  .section-3 h1 {
+    font-size: 45px;
+  }
+  .section-3 .info {
+    font-size: 23px;
+  }
+  .second {
+    height: 409.8px;
+  }
+}
+/* --------------------------- ipad ------------------------------- */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+  .top {
+    background-size: cover;
+  }
+  .top img {
+    width: 220px;
+  }
+  .top h3 {
+    font-size: 95px;
+  }
+  .top button {
+    font-size: 30px;
+    width: 605px;
+  }
+  .section-1 {
+    height: 1024px;
+  }
+  .section-1 img {
+    width: 150px;
+  }
+  .section-3 h1 {
+    font-size: 34px;
+  }
+  .section-3 .info {
+    font-size: 20px;
+  }
+  .second {
+    height: 614.4px;
+  }
+}
+/* --------------------------- iphone6 ------------------------------- */
+/* Potrait */
+@media only screen and (max-width: 415px) and (orientation: portrait) {
+  .navbar .container {
+    width: 100%;
+    margin: 0;
+  }
+  .navbar-nav li a {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #000;
+    border-color: #fff;
+  }
+  .top {
+    background-size: cover;
+  }
+  .top button {
+    margin-top: 50px;
+  }
+  .section-1 {
+    height: 1472px;
+  }
+  .section-1 .img {
+    width: 138px;
+  }
+  .section-1 .img-txt {
+    margin: 0 0 5px 0;
+  }
+  .second {
+    height: 515.1999999999999px;
+  }
+  #reg-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #reg-form button[type=submit] {
+    width: 40px;
+    margin: 4px;
+  }
+  #reg-form input[type=text] {
+    width: 250px;
+  }
+  .section-3 {
+    height: 736px;
+  }
+  .reg-feedback h1 {
+    font-size: 20px;
+  }
+  .reg-feedback button {
+    font-size: 15px;
+    font-weight: normal;
+    width: 130px;
+  }
+}
+/* Landscape */
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .top img {
+    width: 70px;
+    margin: 0;
+  }
+  .top h3 {
+    font-size: 57px;
+  }
+  .top button {
+    font-size: 15px;
+    width: 300px;
+    height: 45px;
+    margin: 0;
+  }
+  .section-1 {
+    height: 800px;
+  }
+  .section-1 h2 {
+    font-size: 19px;
+  }
+  .section-1 h3 {
+    font-size: 50px;
+  }
+  .section-1 img {
+    width: 130px;
+  }
+  .second {
+    height: 368px;
+  }
+}
+/* --------------------------- iphone5 ------------------------------- */
+/* Potrait */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  h3 {
+    font-size: 37px;
+  }
+  .top img {
+    width: 100px;
+    margin-top: initial;
+  }
+  .top h3 {
+    margin-top: 33px;
+  }
+  .top button {
+    font-size: 14px;
+    width: 270px;
+    margin-top: inherit;
+  }
+  .section-1 {
+    height: 1363.2px;
+  }
+  .section-1 .img {
+    width: 100px;
+  }
+  .section-1 .img-txt {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  #reg-form h2 {
+    text-align: center;
+  }
+  #reg-form input[type=text] {
+    width: 240px;
+  }
+  .second {
+    height: 568px;
+  }
+  .second .container {
+    top: 28px;
+  }
+  .section-3 {
+    height: 935px;
+  }
+}
+/* Landscape */
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  h2 {
+    font-size: 20px;
+  }
+  .top img {
+    width: 70px;
+    margin-top: initial;
+    margin-bottom: 15px;
+  }
+  .top h3 {
+    font-size: 40px;
+    margin-top: inherit;
+  }
+  .top button {
+    font-size: 15px;
+    width: 300px;
+    margin-top: inherit;
+  }
+  .section-1 {
+    height: 1420px;
+  }
+  .section-1 .img {
+    width: 105px;
+  }
+  .section-3 {
+    height: 800px;
+  }
+  #reg-form h2 {
+    text-align: center;
+  }
+  .second {
+    height: 454.40000000000003px;
+  }
+}
