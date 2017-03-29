@@ -96,9 +96,6 @@ h3 {
   height: 100%;
   width: auto;
 }
-.top .container {
-  height: 90%;
-}
 .top h3 {
   color: #fff;
   font-size: 100px;
@@ -324,13 +321,13 @@ h3 {
 }
 /** Desctop **/
 /** col-md **/
-/*@media (min-width: 992px) and (max-width: 1200px){
-	.top h3 {
-			font-size: 100px
-	}
-}*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .top h3 {
+    font-size: 100px;
+  }
+}
 /** col-sm **/
-@media screen only and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .top img {
     width: 140px;
   }
@@ -341,8 +338,8 @@ h3 {
     width: 150px;
   }
 }
-/* --------------------------- ipad Pro------------------------------- */
-@media (max-width: 1024px) and (orientation: portrait) {
+/* --------------------------- ipad ------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .top img {
     width: 300px;
   }
@@ -372,7 +369,7 @@ h3 {
   }
 }
 /* --------------------------- ipad ------------------------------- */
-@media only screen and (max-width: 768px) {
+@media (min-width: 415px) and (max-width: 768px) {
   h2 {
     font-size: 26px;
   }
@@ -407,7 +404,7 @@ h3 {
 }
 /* --------------------------- iphone6 ------------------------------- */
 /* Potrait */
-@media only screen and (max-width: 415px) and (orientation: portrait) {
+@media (min-width: 320px) and (max-width: 415px) and (orientation: portrait) {
   .navbar .container {
     width: 100%;
     margin: 0;
@@ -494,7 +491,7 @@ h3 {
 }
 /* --------------------------- iphone5 ------------------------------- */
 /* Potrait */
-@media only screen and (max-width: 320px) and (orientation: portrait) {
+@media (min-width: 0px) and (max-width: 320px) and (orientation: portrait) {
   h3 {
     font-size: 37px;
   }
@@ -536,8 +533,7 @@ h3 {
     height: 935px;
   }
 }
-/* Landscape */
-@media only screen and (max-width: 568px) and (orientation: landscape) {
+@media (min-width: 0px) and (max-width: 568px) and (orientation: landscape) {
   h2 {
     font-size: 20px;
   }
