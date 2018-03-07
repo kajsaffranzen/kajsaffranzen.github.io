@@ -9,9 +9,70 @@ $beer-glass-color: #f0f0f0;
   border-radius: 100%;
 }
 
+@mixin vertical-object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin shadow($a, $b, $c, $d, $e) {
+  -webkit-box-shadow: $a $b $c $d $e;
+  -moz-box-shadow: $a $b $c $d $e;
+  box-shadow: $a $b $c $d $e;
+}
+
 body {
   background: $background-color;
   margin: 0;
+}
+
+.center-object {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 20%;
+  background: white;
+  animation: 6s moveX infinite;
+}
+
+
+.box-shadow {
+  height: 30%;
+  width: 30%;
+  background: white;
+  @include shadow(13px, 10px, 4px, 5px, #E8E8E8);
+}
+
+.coffe-cup {
+  height: 10%;
+  width: 160px;
+
+  border-top: 300px solid white;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+.button-example{
+  width: 30%;
+  height: 15%;
+  border: 5px solid white;
+  border-radius: 10px;
+  @include vertical-object;
+
+  p {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Roboto';
+    color: white;
+  }
 }
 
 .beer {
@@ -23,7 +84,7 @@ body {
   transform: translate(-50%, -50%);
 
   .beer-glass {
-    top: 15%;
+    top: 20%;
     left: 5%;
     position: absolute;
     width: 140px;
@@ -100,7 +161,7 @@ body {
       @include circle(15px);
       right: 0%;
       bottom: 10%;
-      animation: 3s blink 1s forwards;
+      animation: 3s blink 1 1s forwards;
     }
   }
 
@@ -108,8 +169,8 @@ body {
     @include circle(50px);
     background: white;
     position: relative;
-    left: -5%;
-    top: 10%;
+    left: -2%;
+    top: 20%;
 
     &:before, &:after {
       position: absolute;
@@ -133,10 +194,11 @@ body {
     position: relative;
     width: 30px;
     height: 120px;
-    top: -4%;
+    top: 0%;
+    left: 4%;
     background: white;
     border-radius: 20px;
-    box-shadow: 23px 21px 0px 0px white;
+    box-shadow: 26px 20px 0px 0px white;
     animation:
       6s drip infinite;
   }
@@ -154,9 +216,19 @@ body {
 
 @keyframes drip {
   0% {
-    transform: translateY(0px);
+    //transform: translateY(0px);
+    height: 120px;
   }
   100% {
     height: 170px;
+  }
+}
+
+@keyframes moveX {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 70%;
   }
 }
